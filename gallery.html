@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mojoCoffee Shop Gallery</title>
+  <link rel="stylesheet" href="gallery.css">
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fdf9f3;
+      color: #5c4033;
+      text-align: center;
+    }
+
+    header {
+      background-color: #6f4e37;
+      color: white;
+      padding: 20px;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    nav {
+      position: relative;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 10px;
+    }
+
+    figure {
+      margin: 0;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    figcaption {
+      margin-top: 5px;
+      font-size: 14px;
+    }
+  .logo{
+    width: auto;
+    height: 90px;
+    border-radius: 50%;
+    align-items: top;
+  }
+  </style>
+</head>
+<body>
+  <header>
+    <center><h1>Gallery</h1></center>
+    <nav>
+      <ul>
+        <img src="logo.jpg" alt="" class="logo">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="contactus.html">Contact</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="gallery">
+      <figure>
+        <img src="freshlybrewed.jpg" alt="Freshly Brewed Coffee">
+        <figcaption>Freshly Brewed Coffee</figcaption>
+      </figure>
+      <figure>
+        <img src="coffee2.jpg" alt="Delicious Croissant">
+        <figcaption>Delicious Croissant</figcaption>
+      </figure>
+      <figure>
+        <img src="coffee3.jpg" alt="Cozy Ambiance">
+        <figcaption>Cozy Ambiance</figcaption>
+      </figure>
+      <figure>
+        <img src="coffee4.jpg" alt="Specialty Latte Art">
+        <figcaption>Specialty Latte Art</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 mojoCoffee Shop. All rights reserved.</p>
+  </footer>
+</body>
+</html>
